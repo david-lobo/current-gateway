@@ -5,7 +5,20 @@
 You can install the package via composer:
 
 ```bash
-composer require audiojames/current-gateway
+composer require jjsoftwareltd/current-gateway
+```
+
+Add the repository to your composer.json:
+
+```json
+{
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:JJSoftwareLtd/current-gateway.git"
+        }
+    ]
+}
 ```
 
 Add your subdmoain and key to your env file:

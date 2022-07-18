@@ -1,12 +1,11 @@
 {
-    "name": "audiojames/current-gateway",
+    "name": "jjsoftwareltd/current-gateway",
     "description": "A Laravel Facade to access the Current RMS Api",
     "keywords": [
-        "audiojames",
         "laravel",
         "current-gateway"
     ],
-    "homepage": "https://github.com/audiojames/current-gateway",
+    "homepage": "https://github.com/JJSoftwareLtd/current-gateway",
     "license": "MIT",
     "authors": [
         {
@@ -35,13 +34,12 @@
     },
     "autoload": {
         "psr-4": {
-            "AudioJames\\CurrentGateway\\": "src",
-            "AudioJames\\CurrentGateway\\Database\\Factories\\": "database/factories"
+            "JJSoftwareLtd\\CurrentGateway\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "AudioJames\\CurrentGateway\\Tests\\": "tests"
+            "JJSoftwareLtd\\CurrentGateway\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -56,10 +54,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "AudioJames\\CurrentGateway\\CurrentGatewayServiceProvider"
+                "JJSoftwareLtd\\CurrentGateway\\CurrentGatewayServiceProvider"
             ],
             "aliases": {
-                "CurrentGateway": "AudioJames\\CurrentGateway\\Facades\\CurrentGateway"
+                "CurrentGateway": "JJSoftwareLtd\\CurrentGateway\\Facades\\CurrentGateway"
             }
         }
     },
