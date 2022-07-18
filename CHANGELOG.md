@@ -2,6 +2,14 @@
 
 All notable changes to `current-gateway` will be documented in this file.
 
+## v1.0.2 - 2022-07-18
+
+### What's Changed
+
+- Move to JJ software by @audiojames in https://github.com/JJSoftwareLtd/current-gateway/pull/2
+
+**Full Changelog**: https://github.com/JJSoftwareLtd/current-gateway/compare/v1.0.1...v1.0.2
+
 ## v1.0.1 - 2022-07-18
 
 ### What's Changed
