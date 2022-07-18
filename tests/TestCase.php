@@ -2,9 +2,9 @@
 
 namespace AudioJames\CurrentGateway\Tests;
 
+use AudioJames\CurrentGateway\CurrentGatewayServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use AudioJames\CurrentGateway\CurrentGatewayServiceProvider;
 
 class TestCase extends Orchestra
 {

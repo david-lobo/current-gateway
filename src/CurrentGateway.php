@@ -7,7 +7,9 @@ use Illuminate\Support\Facades\Http;
 class CurrentGateway
 {
     protected string $subdomain;
+
     protected string $key;
+
     protected string $endpoint;
 
     public function __construct()
@@ -17,7 +19,7 @@ class CurrentGateway
         $this->endpoint = config('current-gateway.endpoint');
     }
 
-    public function get(string $resource, ?int $id = null,  array $parameters = [])
+    public function get(string $resource, ?int $id = null, array $parameters = [])
     {
         $parameters = collect(['per_page' => 100])
             ->merge($parameters)
@@ -33,12 +35,12 @@ class CurrentGateway
         return $this->callCurrentApi('post', $resource, $data);
     }
 
-    public function put(string $resource, int $id,  array $data = [])
+    public function put(string $resource, int $id, array $data = [])
     {
         return $this->callCurrentApi('put', "{$resource}/{$id}", $data);
     }
 
-    public function delete(string $resource,int $id)
+    public function delete(string $resource, int $id)
     {
         return $this->callCurrentApi('delete', "{$resource}/{$id}");
     }
@@ -49,7 +51,7 @@ class CurrentGateway
             'X-SUBDOMAIN' => $this->subdomain,
             'X-AUTH-TOKEN' => $this->key,
         ])
-            ->$method($this->endpoint . $path, $data)
+            ->$method($this->endpoint.$path, $data)
             ->throw()
             ->json();
     }
