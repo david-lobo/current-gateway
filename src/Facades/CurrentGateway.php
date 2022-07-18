@@ -1,11 +1,11 @@
 <?php
 
-namespace AudioJames\CurrentGateway\Facades;
+namespace JJSoftwareLtd\CurrentGateway\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \AudioJames\CurrentGateway\CurrentGateway
+ * @see \JJSoftwareLtd\CurrentGateway\CurrentGateway
  */
 class CurrentGateway extends Facade
 {

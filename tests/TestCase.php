@@ -1,9 +1,9 @@
 <?php
 
-namespace AudioJames\CurrentGateway\Tests;
+namespace JJSoftwareLtd\CurrentGateway\Tests;
 
-use AudioJames\CurrentGateway\CurrentGatewayServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use JJSoftwareLtd\CurrentGateway\CurrentGatewayServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
@@ -13,7 +13,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'AudioJames\\CurrentGateway\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'JJSoftwareLtd\\CurrentGateway\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
     }
 

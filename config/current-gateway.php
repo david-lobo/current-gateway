@@ -1,6 +1,6 @@
 <?php
 
-// config for AudioJames/CurrentGateway
+// config for JJSoftwareLtd/CurrentGateway
 return [
     /*
     |--------------------------------------------------------------------------

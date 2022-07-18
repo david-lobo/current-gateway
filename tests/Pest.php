@@ -1,5 +1,5 @@
 <?php
 
-use AudioJames\CurrentGateway\Tests\TestCase;
+use JJSoftwareLtd\CurrentGateway\Tests\TestCase;
 
 uses(TestCase::class)->in(__DIR__);

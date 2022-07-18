@@ -1,6 +1,6 @@
 <?php
 
-namespace AudioJames\CurrentGateway;
+namespace JJSoftwareLtd\CurrentGateway;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
