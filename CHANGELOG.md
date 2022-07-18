@@ -2,6 +2,14 @@
 
 All notable changes to `current-gateway` will be documented in this file.
 
+## v1.0.3 - 2022-07-18
+
+### What's Changed
+
+- Fix Namespace by @audiojames in https://github.com/JJSoftwareLtd/current-gateway/pull/3
+
+**Full Changelog**: https://github.com/JJSoftwareLtd/current-gateway/compare/v1.0.2...v1.0.3
+
 ## v1.0.2 - 2022-07-18
 
 ### What's Changed
