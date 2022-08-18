@@ -22,7 +22,9 @@ class CurrentGatewayServiceProvider extends PackageServiceProvider
     public function registeringPackage()
     {
         $this->app->bind('current-gateway', function () {
-            return new CurrentGateway();
+            $config = config('current-gateway');
+
+            return new CurrentGatewayBase($config['subdomain'], $config['key'], $config['endpoint']);
         });
     }
 }

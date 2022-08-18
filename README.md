@@ -8,19 +8,6 @@ You can install the package via composer:
 composer require jjsoftwareltd/current-gateway
 ```
 
-Add the repository to your composer.json:
-
-```json
-{
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "git@github.com:JJSoftwareLtd/current-gateway.git"
-        }
-    ]
-}
-```
-
 Add your subdmoain and key to your env file:
 
 ```bash
@@ -35,22 +22,22 @@ php artisan vendor:publish --tag="current-gateway-config"
 ```
 
 ## Usage
+The response is returned as an associative array.
 
 ```php
-$data = CurrentGateway::get();
+CurrentGateway::get('opportunities', ['page' => 1]);
+
+CurrentGateway::post('opportunities', ['subject' => 'My Job']);
+
+CurrentGateway::put('opportunities/1', ['subject' => 'My Job']);
+
+CurrentGateway::delete('opportunities/1');
+
 ```
 
 ## Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
-
-## Contributing
-
-Please see [CONTRIBUTING](https://github.com/audiojames/.github/blob/main/CONTRIBUTING.md) for details.
-
-## Security Vulnerabilities
-
-Please review [our security policy](../../security/policy) on how to report security vulnerabilities.
 
 ## Credits
 

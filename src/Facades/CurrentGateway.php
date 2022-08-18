@@ -5,7 +5,7 @@ namespace JJSoftwareLtd\CurrentGateway\Facades;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \JJSoftwareLtd\CurrentGateway\CurrentGateway
+ * @see \JJSoftwareLtd\CurrentGateway\CurrentGatewayBase
  */
 class CurrentGateway extends Facade
 {
