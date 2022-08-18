@@ -10,8 +10,7 @@ class CurrentGatewayBase
         protected string $subdomain,
         protected string $key,
         protected string $endpoint,
-    )
-    {
+    ) {
     }
 
     public function get(string $resource, array $parameters = [])
@@ -42,7 +41,7 @@ class CurrentGatewayBase
             'X-SUBDOMAIN' => $this->subdomain,
             'X-AUTH-TOKEN' => $this->key,
         ])
-            ->$method($this->endpoint . $path, $data)
+            ->$method($this->endpoint.$path, $data)
             ->throw()
             ->json();
     }
