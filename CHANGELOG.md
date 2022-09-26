@@ -2,6 +2,10 @@
 
 All notable changes to `current-gateway` will be documented in this file.
 
+## v1.1.1 Allow Laravel 8 - 2022-09-26
+
+**Full Changelog**: https://github.com/JJSoftwareLtd/current-gateway/compare/v1.1.0...v1.1.1
+
 ## v1.1.0 - 2022-08-18
 
 **Full Changelog**: https://github.com/JJSoftwareLtd/current-gateway/compare/v1.0.3...v1.1.0
