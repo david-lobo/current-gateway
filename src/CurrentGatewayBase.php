@@ -13,29 +13,29 @@ class CurrentGatewayBase
     ) {
     }
 
-    public function get(string $resource, array $parameters = [])
+    public function get(string $resource, array $parameters = []): array
     {
         $parameters = array_merge(['per_page' => 100], $parameters);
 
         return $this->callCurrentApi('get', $resource, $parameters);
     }
 
-    public function post(string $resource, array $data = [])
+    public function post(string $resource, array $data = []): array
     {
         return $this->callCurrentApi('post', $resource, $data);
     }
 
-    public function put(string $resource, array $data = [])
+    public function put(string $resource, array $data = []): array
     {
         return $this->callCurrentApi('put', $resource, $data);
     }
 
-    public function delete(string $resource)
+    public function delete(string $resource): array
     {
         return $this->callCurrentApi('delete', $resource);
     }
 
-    public function callCurrentApi(string $method, string $path, array $data = [])
+    public function callCurrentApi(string $method, string $path, array $data = []): array
     {
         return Http::withHeaders([
             'X-SUBDOMAIN' => $this->subdomain,
