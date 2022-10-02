@@ -2,6 +2,19 @@
 
 All notable changes to `current-gateway` will be documented in this file.
 
+## v1.2 Add Return Types - 2022-10-02
+
+### What's Changed
+
+- Add Return Types by @audiojames in https://github.com/JJSoftwareLtd/current-gateway/pull/5
+- Bump aglipanci/laravel-pint-action from 0.1.0 to 1.0.0 by @dependabot in https://github.com/JJSoftwareLtd/current-gateway/pull/4
+
+### New Contributors
+
+- @dependabot made their first contribution in https://github.com/JJSoftwareLtd/current-gateway/pull/4
+
+**Full Changelog**: https://github.com/JJSoftwareLtd/current-gateway/compare/v1.1.1...v1.2
+
 ## v1.1.1 Allow Laravel 8 - 2022-09-26
 
 **Full Changelog**: https://github.com/JJSoftwareLtd/current-gateway/compare/v1.1.0...v1.1.1
