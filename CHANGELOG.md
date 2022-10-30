@@ -2,6 +2,14 @@
 
 All notable changes to `current-gateway` will be documented in this file.
 
+## v1.3.0 - 2022-10-30
+
+### What's Changed
+
+- Bump dependabot/fetch-metadata from 1.3.3 to 1.3.4 by @dependabot in https://github.com/JJSoftwareLtd/current-gateway/pull/6
+
+**Full Changelog**: https://github.com/JJSoftwareLtd/current-gateway/compare/v1.2...v1.3.0
+
 ## v1.2 Add Return Types - 2022-10-02
 
 ### What's Changed
