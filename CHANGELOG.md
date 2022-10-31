@@ -2,6 +2,14 @@
 
 All notable changes to `current-gateway` will be documented in this file.
 
+## v1.3.1 - 2022-10-31
+
+### What's Changed
+
+- Allow Laravel 9 by @audiojames in https://github.com/JJSoftwareLtd/current-gateway/pull/7
+
+**Full Changelog**: https://github.com/JJSoftwareLtd/current-gateway/compare/v1.3.0...v1.3.1
+
 ## v1.3.0 - 2022-10-30
 
 ### What's Changed
