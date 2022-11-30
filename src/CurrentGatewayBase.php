@@ -45,4 +45,9 @@ class CurrentGatewayBase
             ->throw()
             ->json();
     }
+
+    public function beforeLastPage(array $meta) : bool
+    {
+        return ceil($meta['total_row_count'] / $meta['per_page']) > $meta['page'];
+    }
 }
