@@ -2,6 +2,14 @@
 
 All notable changes to `current-gateway` will be documented in this file.
 
+## v1.5.0 - 2022-12-05
+
+### What's Changed
+
+- Add Cached Get Method by @audiojames in https://github.com/JJSoftwareLtd/current-gateway/pull/10
+
+**Full Changelog**: https://github.com/JJSoftwareLtd/current-gateway/compare/v1.4.0...v1.5.0
+
 ## v1.3.1 - 2022-10-31
 
 ### What's Changed
