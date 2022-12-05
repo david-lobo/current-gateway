@@ -2,6 +2,8 @@
 
 namespace JJSoftwareLtd\CurrentGateway;
 
+use Carbon\Carbon;
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Http;
 
 class CurrentGatewayBase
@@ -10,7 +12,8 @@ class CurrentGatewayBase
         protected string $subdomain,
         protected string $key,
         protected string $endpoint,
-    ) {
+    )
+    {
     }
 
     public function get(string $resource, array $parameters = []): array
@@ -18,6 +21,21 @@ class CurrentGatewayBase
         $parameters = array_merge(['per_page' => 100], $parameters);
 
         return $this->callCurrentApi('get', $resource, $parameters);
+    }
+
+    public function cachedGet(string $resource, array $parameters = [], int $minutes = 5): array
+    {
+        $key = 'current-gateway-' . $resource . json_encode($parameters);
+
+        if (Cache::has($key)) {
+            return Cache::get($key);
+        }
+
+        $response = $this->get($resource, $parameters);
+
+        Cache::put($key, $response, Carbon::now()->addMinutes($minutes));
+
+        return $response;
     }
 
     public function post(string $resource, array $data = []): array
@@ -41,7 +59,7 @@ class CurrentGatewayBase
             'X-SUBDOMAIN' => $this->subdomain,
             'X-AUTH-TOKEN' => $this->key,
         ])
-            ->$method($this->endpoint.$path, $data)
+            ->$method($this->endpoint . $path, $data)
             ->throw()
             ->json();
     }
