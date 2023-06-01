@@ -2,6 +2,18 @@
 
 All notable changes to `current-gateway` will be documented in this file.
 
+## v1.6.0 Laravel 10 - 2023-06-01
+
+### What's Changed
+
+- Bump dependabot/fetch-metadata from 1.3.5 to 1.3.6 by @dependabot in https://github.com/JJSoftwareLtd/current-gateway/pull/12
+- Bump dependabot/fetch-metadata from 1.3.6 to 1.4.0 by @dependabot in https://github.com/JJSoftwareLtd/current-gateway/pull/14
+- Bump dependabot/fetch-metadata from 1.4.0 to 1.5.1 by @dependabot in https://github.com/JJSoftwareLtd/current-gateway/pull/15
+- Bump aglipanci/laravel-pint-action from 1.0.0 to 2.3.0 by @dependabot in https://github.com/JJSoftwareLtd/current-gateway/pull/16
+- Add Laravel 10 Support by @audiojames in https://github.com/JJSoftwareLtd/current-gateway/pull/17
+
+**Full Changelog**: https://github.com/JJSoftwareLtd/current-gateway/compare/v1.5.0...v1.6.0
+
 ## v1.5.0 - 2022-12-05
 
 ### What's Changed
