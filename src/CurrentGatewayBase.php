@@ -12,7 +12,8 @@ class CurrentGatewayBase
         protected string $subdomain,
         protected string $key,
         protected string $endpoint,
-    ) {
+    )
+    {
     }
 
     public function get(string $resource, array $parameters = []): array
@@ -24,7 +25,7 @@ class CurrentGatewayBase
 
     public function cachedGet(string $resource, array $parameters = [], int $minutes = 5): array
     {
-        $key = 'current-gateway-'.$resource.json_encode($parameters);
+        $key = 'current-gateway-' . $resource . json_encode($parameters);
 
         if (Cache::has($key)) {
             return Cache::get($key);
@@ -58,9 +59,9 @@ class CurrentGatewayBase
             'X-SUBDOMAIN' => $this->subdomain,
             'X-AUTH-TOKEN' => $this->key,
         ])
-            ->$method($this->endpoint.$path, $data)
+            ->$method($this->endpoint . $path, $data)
             ->throw()
-            ->json();
+            ->json() ?? [];
     }
 
     public function beforeLastPage(array $meta): bool
