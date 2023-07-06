@@ -2,6 +2,15 @@
 
 All notable changes to `current-gateway` will be documented in this file.
 
+## v1.7.0 - 2023-07-06
+
+### What's Changed
+
+- Bump dependabot/fetch-metadata from 1.5.1 to 1.6.0 by @dependabot in https://github.com/JJSoftwareLtd/current-gateway/pull/18
+- fix return types for delete by @audiojames in https://github.com/JJSoftwareLtd/current-gateway/pull/19
+
+**Full Changelog**: https://github.com/JJSoftwareLtd/current-gateway/compare/v1.6.0...v1.7.0
+
 ## v1.6.0 Laravel 10 - 2023-06-01
 
 ### What's Changed
