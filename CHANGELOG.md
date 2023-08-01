@@ -2,6 +2,14 @@
 
 All notable changes to `current-gateway` will be documented in this file.
 
+## v1.8.1 - 2023-08-01
+
+### What's Changed
+
+- Add base http method by @audiojames in https://github.com/JJSoftwareLtd/current-gateway/pull/20
+
+**Full Changelog**: https://github.com/JJSoftwareLtd/current-gateway/compare/v1.8.0...v1.8.1
+
 ## v1.8.0 - 2023-08-01
 
 Add Base HTTP Method
