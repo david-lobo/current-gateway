@@ -54,13 +54,18 @@ class CurrentGatewayBase
 
     public function callCurrentApi(string $method, string $path, array $data = []): array
     {
+        return $this->getBaseHttp()
+            ->$method($this->endpoint . $path, $data)
+            ->throw()
+            ->json() ?? [];
+    }
+
+    public function getBaseHttp(): \Illuminate\Http\Client\PendingRequest
+    {
         return Http::withHeaders([
             'X-SUBDOMAIN' => $this->subdomain,
             'X-AUTH-TOKEN' => $this->key,
-        ])
-            ->$method($this->endpoint.$path, $data)
-            ->throw()
-            ->json() ?? [];
+        ]);
     }
 
     public function beforeLastPage(array $meta): bool
