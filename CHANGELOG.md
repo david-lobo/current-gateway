@@ -2,6 +2,12 @@
 
 All notable changes to `current-gateway` will be documented in this file.
 
+## v1.8.0 - 2023-08-01
+
+Add Base HTTP Method
+
+**Full Changelog**: https://github.com/JJSoftwareLtd/current-gateway/compare/v1.7.0...v1.8.0
+
 ## v1.7.0 - 2023-07-06
 
 ### What's Changed
