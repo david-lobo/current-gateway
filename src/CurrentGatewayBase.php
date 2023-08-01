@@ -55,7 +55,7 @@ class CurrentGatewayBase
     public function callCurrentApi(string $method, string $path, array $data = []): array
     {
         return $this->getBaseHttp()
-            ->$method($this->endpoint . $path, $data)
+            ->$method($this->endpoint.$path, $data)
             ->throw()
             ->json() ?? [];
     }
