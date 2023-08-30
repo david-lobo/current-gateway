@@ -8,6 +8,9 @@ use Illuminate\Support\Facades\Http;
 
 class CurrentGatewayBase
 {
+
+    public bool $throw = true;
+
     public function __construct(
         protected string $subdomain,
         protected string $key,
@@ -56,7 +59,7 @@ class CurrentGatewayBase
     {
         return $this->getBaseHttp()
             ->$method($path, $data)
-            ->throw()
+            ->throwIf($this->throw)
             ->json() ?? [];
     }
 
@@ -72,5 +75,12 @@ class CurrentGatewayBase
     public function beforeLastPage(array $meta): bool
     {
         return ceil($meta['total_row_count'] / $meta['per_page']) > $meta['page'];
+    }
+
+    public function dontThrow()
+    {
+        $this->throw = false;
+
+        return $this;
     }
 }
