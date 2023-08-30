@@ -8,7 +8,6 @@ use Illuminate\Support\Facades\Http;
 
 class CurrentGatewayBase
 {
-
     public bool $throw = true;
 
     public function __construct(
