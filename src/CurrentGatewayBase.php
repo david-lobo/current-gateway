@@ -66,9 +66,11 @@ class CurrentGatewayBase
             ->json() ?? [];
     }
 
-    public function setErrorHandler(callable $callable): void
+    public function setErrorHandler(callable $callable): self
     {
         $this->errorHandler = $callable;
+
+        return $this;
     }
 
     public function getBaseHttp(): \Illuminate\Http\Client\PendingRequest
@@ -85,7 +87,7 @@ class CurrentGatewayBase
         return ceil($meta['total_row_count'] / $meta['per_page']) > $meta['page'];
     }
 
-    public function dontThrow()
+    public function dontThrow(): self
     {
         $this->throw = false;
 
