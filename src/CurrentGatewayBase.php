@@ -3,7 +3,6 @@
 namespace JJSoftwareLtd\CurrentGateway;
 
 use Carbon\Carbon;
-use Illuminate\Http\Client\Response;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Http;
 
@@ -61,7 +60,8 @@ class CurrentGatewayBase
     {
         return $this->getBaseHttp()
             ->$method($path, $data)
-            ->onError($this->errorHandler ?? function () {})
+            ->onError($this->errorHandler ?? function () {
+            })
             ->throwIf($this->throw)
             ->json() ?? [];
     }
