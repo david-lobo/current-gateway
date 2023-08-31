@@ -2,6 +2,14 @@
 
 All notable changes to `current-gateway` will be documented in this file.
 
+## v1.10.0 - 2023-08-31
+
+### What's Changed
+
+- Error Handler by @audiojames in https://github.com/JJSoftwareLtd/current-gateway/pull/22
+
+**Full Changelog**: https://github.com/JJSoftwareLtd/current-gateway/compare/v1.9.0...v1.10.0
+
 ## v1.9.0 - 2023-08-30
 
 ### What's Changed
